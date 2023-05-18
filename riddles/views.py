@@ -9,7 +9,7 @@ def index_page(request):
         message = request.GET.get('message', '')
         template = render(request, 'hello.html', dict(name=name, message=message))
     else: 
-        template = render(request, 'index.html')
+        template = render(request, 'test_temp.html')
     return template
 
 #def index(request):
